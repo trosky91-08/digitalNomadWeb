@@ -1,0 +1,53 @@
+---
+const { name } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{name}</title>
+  </head>
+  <body id="member">
+   
+    <slot />
+    
+   
+    <script
+      src="https://kit.fontawesome.com/b992314f76.js"
+      crossorigin="anonymous"></script>
+
+  </body>
+</html>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+  :root {
+    --size-h1: 4rem;
+    --size-h2: 3rem;
+    --letter-space: 1.5px;
+    --first-color: #0d4224;
+    --second-color: #006838;
+    --third-color: #f1efea;
+    --first-font: "League Spartan", sans-serif;
+    --second-font: "Open Sans", sans-serif;
+    --font-size-p: 1.5rem;
+    --font-size-h-card: 25px;
+    --font-color-global: rgba(67, 68, 68, 1);
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: var(--first-font);
+    color: var(--font-color-global);
+    
+  }
+
+ 
+</style>

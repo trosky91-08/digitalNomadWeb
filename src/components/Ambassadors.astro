@@ -1,0 +1,251 @@
+---
+
+---
+
+<div id="Ambassadors" class="card-area">
+  <div class="wrapper">
+    <h2>Our Ambassadors</h2>
+    <p id="parrafo">
+      Our ambassadors at The Digital Nomads Association Colombia are dedicated
+      advocates for cultural exchange and community engagement. They bridge
+      nomads and local communities through events, workshops, and cultural
+      exchanges, fostering mutual understanding and enriching the nomadic
+      experience in Colombia.
+    </p>
+    <div class="box-area">
+      <div class="box">
+        <img
+          src="../jhon.webp"
+          alt="jhon"
+        />
+        <div class="box-contend">
+          <h3>Jhon Darwin Herrera</h3>
+          <h4>Business consultant, accelerator and strategist</h4>
+          <p class="text">
+            John, a digital nomad for over 4 years, travels the world to study
+            business and communication. His unique approach blends a fresh,
+            friendly style with extensive knowledge and experience.
+          </p>
+          <div class="social-container">
+            <a href="https://www.facebook.com/JhonDarwin11"
+              ><i class="fa-brands fa-facebook"></i></a
+            >
+
+            <a href="https://www.instagram.com/jhondarwin11/"
+              ><i class="fa-brands fa-instagram"></i></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <img src="../jhonny.webp" alt="jhonny" />
+        <div class="box-contend">
+          <h3>Jhonny Rios</h3>
+          <h4>
+            Founder and Social Media Community Manager - Admin. of GringoPaisa
+            (Americans in Medellín)
+          </h4>
+          <p class="text">
+            Jhony is passionate about creating and teaching captivating content
+            for local businesses and expats. He connects with online audiences
+            and consumers on Facebook and in person.
+            <div class="social-container">
+              <a href="https://www.facebook.com/groups/173029852759738"
+                ><i class="fa-brands fa-facebook"></i></a
+              >
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <img src="../jhonny.webp" alt="jhonny" />
+        <div class="box-contend">
+          <h3>Caro Suecka</h3>
+          <h4>
+            Ambassador & Digital Nomads Chronicles host
+          </h4>
+          <p class="text">
+            Sara from Medellín. She is an audiovisual communicator passionate about photography, and she loves capturing unique moments and telling stories through her camera
+            <div class="social-container">
+              <a href="https://www.facebook.com/groups/173029852759738"
+                ><i class="fa-brands fa-facebook"></i></a
+              >
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<style>
+  .card-area {
+    padding: 20px 40px;
+  }
+  .wrapper {
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & h2{
+      font-family: var(--first-font);
+      font-size: var(--size-h2);
+      letter-spacing: var(--letter-space);
+      color: var(--first-color);
+      text-align: center;
+      margin-top: 3rem;
+    }
+    & #parrafo{
+      padding: 0 10rem;
+      font-family: var(--second-font);
+      text-align: justify;
+      font-size: var(--font-size-p);
+      color: var(--font-color-global);
+      margin: 0 0 10px 0;
+    }
+  }
+  
+  
+  
+  .box-area {
+    
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    animation-name: move;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+    padding-bottom: 40px;
+    & .box{
+      overflow: hidden;
+      position: relative;
+      border-radius: 1rem;
+    }
+  }
+  
+  .text {
+    font-size: 0.8rem;
+  }
+  .box img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+    border-radius: 10px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+ 
+
+  .social-container {
+    margin-top: 1rem;
+    & a{
+      & i{
+        font-size: 1.3rem;
+        padding-left: 1rem;
+        color: var(--third-color);
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+      }
+    }
+    
+  }
+  .social-container a i:hover {
+    color: var(--second-color);
+  }
+
+  .box-contend {
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent, var(--second-color) 52%);
+    border-radius: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: height 0.5s;
+    & h3{
+      font-family: var(--first-font);
+      font-size: var(--font-size-h-card);
+      color: var(--third-color);
+      text-shadow: 5px 5px 5px #000;
+      margin-top: 1rem;
+    }
+    & h4{
+      font-family: var(--first-font);
+      font-size: 0.9rem;
+      color: var(--third-color);
+      text-shadow: 5px 5px 5px #000;
+      margin-top: 1rem;
+    }
+    & p{
+      font-family: var(--second-font);
+      color: var(--third-color);
+      text-shadow: 5px 5px 5px #000;
+      margin-top: 1rem;
+    }
+  }
+  .box:hover .box-contend {
+    height: 100%;
+  }
+  @keyframes move {
+    from {
+      opacity: 0;
+      translate: 0 100px;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+      scale: 1;
+    }
+  }
+  @media (width < 970px) {
+    .card-area  {
+      & h2 {
+        margin-top: 2rem;
+      }
+      & #parrafo{
+        padding: 0 8rem;
+      }
+    }
+  }
+  @media (width < 898px) {
+    .card-area  {
+      & h2 {
+        margin-top: 2rem;
+      }
+      & #parrafo{
+        padding: 0 3.5rem;
+      }
+    }
+  }
+  @media (width < 830px) {
+    .card-area  {
+      & h2 {
+        margin-top: 2rem;
+      }
+      & #parrafo{
+        padding: 0 1rem;
+      font-family: var(--second-font);
+      }
+      
+    }
+    .box-area {
+      animation-range: entry 10% cover 40%;
+    }
+  }
+</style>

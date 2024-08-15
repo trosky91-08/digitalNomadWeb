@@ -1,0 +1,258 @@
+<div id="founders" class="card-area">
+  <div class="wrapper">
+    <h2>Founders</h2>
+    <p id="parrafo">
+      Our founders are visionary leaders with extensive digital nomad
+      experience. Passionate about travel and cultural exchange, they created
+      The Digital Nomads Association Colombia to connect and inspire nomads
+      worldwide, fostering harmonious relationships with local communities and
+      showcasing Colombia's rich heritage.
+    </p>
+    <div class="box-area">
+      <div class="box">
+        <img
+          src="../Nadia.webp"
+          alt="nadia"
+        />
+        <div class="box-contend">
+          <h3>Nadia Cortés</h3>
+          <h4>President, General Director</h4>
+          <p>
+            Nadia is a Digital Nomad from Bogotá, Colombia. She is passionated
+            about languages, philosophy, and urban planning.
+          </p>
+          <div class="social-container">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/nadia.alejandra.56"
+              ><i class="fa-brands fa-facebook"></i></a
+            >
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/nadia-cort%C3%A9s-quenguan-5362bb1a/"
+              ><i class="fa-brands fa-linkedin"></i></a
+            >
+            <a
+              target="_blank"
+              href="https://www.instagram.com/spanishfordigitalnomads/"
+              ><i class="fa-brands fa-instagram"></i></a
+            >
+            <a target="_blank" href="nadia.cortes@dnacol.com"
+              ><i class="fa-solid fa-envelope"></i></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <img
+          src="../marie.webp"
+          alt="marie"
+        />
+        <div class="box-contend">
+          <h3>Marie-Ève Lord</h3>
+          <h4>Director of Products and Special Projects</h4>
+          <p>
+            Marie is a digital communications expert, from Montreal, Canada, and
+            started her Digital Nomad Life in January 2022.
+          </p>
+          <div class="social-container">
+            <a href="https://www.facebook.com/lordmarieeve"
+              ><i class="fa-brands fa-facebook"></i></a
+            >
+            <a href="https://www.linkedin.com/in/marieevelord/"
+              ><i class="fa-brands fa-linkedin"></i></a
+            >
+            <a href="https://www.instagram.com/lordmarieeve/"
+              ><i class="fa-brands fa-instagram"></i></a
+            >
+            <a href="marieeve.lord@dnacol.com"
+              ><i class="fa-solid fa-envelope"></i></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <img
+          src="../francois.webp"
+          alt="francois"
+        />
+        <div class="box-contend">
+          <h3>Francois Mongeau</h3>
+          <h4>Director of Technology</h4>
+          <p>
+            Francois is an enthusiastic software developer originally from
+            Shawinigan, Canada. He is now working from Medellin and his Spanish
+            is improving every day.
+          </p>
+          <div class="social-container">
+            <a href="https://www.facebook.com/francois.mongeau"
+              ><i class="fa-brands fa-facebook"></i></a
+            >
+            <a href="https://www.linkedin.com/in/francois-mongeau-b615159/"
+              ><i class="fa-brands fa-linkedin"></i></a
+            >
+            <a href="https://www.instagram.com/francois.mongeau/"
+              ><i class="fa-brands fa-instagram"></i></a
+            >
+            <a href="Francois.mongeau@dnacol.com"
+              ><i class="fa-solid fa-envelope"></i></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper h2 {
+    font-family: var(--first-font);
+    font-size: var(--size-h2);
+    letter-spacing: var(--letter-space);
+    color: var(--first-color);
+    margin-top: 2rem;
+  }
+  .wrapper #parrafo {
+    padding: 0 7rem;
+    font-family: var(--second-font);
+    text-align: justify;
+    font-size: var(--font-size-p);
+    color: var(--font-color-global);
+    margin: 0 0 10px 0;
+  }
+  .card-area {
+    padding: 50px 40px;
+  }
+  .box-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+    animation-name: move;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+  }
+  .box {
+    overflow: hidden;
+    position: relative;
+    border-radius: 1rem;
+  }
+  .box img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+    border-radius: 10px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  
+  .social-container a i {
+    
+  }
+  .social-container a i:hover {
+    color: var(--second-color);
+  }
+
+  .box-contend {
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent, var(--second-color) 52%);
+    border-radius: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: height 0.5s;
+    & h3{
+      font-family: var(--first-font);
+      font-size: var(--font-size-h-card);
+      color: var(--third-color);
+      margin-bottom: 0;
+    }
+    & h4{
+      font-family: var(--first-font);
+      font-size: 1.2rem;
+      color: var(--third-color);
+      margin-top: 1rem;
+    }
+    & p{
+      margin-top: 1rem;
+      font-family: var(--second-font);
+      color: var(--third-color);
+      text-align: justify;
+    }
+    & .social-container{
+      margin-top: 2rem;
+      & a{
+        & i{
+          font-size: 1.3rem;
+          padding-left: 1rem;
+          color: var(--third-color);
+          
+        }     
+      }
+    }
+    & .social-container{
+      & a{
+        & i:hover{
+          color: var(--first-color);
+        }
+      }
+    }
+  }
+  .box:hover .box-contend {
+    height: 100%;
+  }
+  @keyframes move {
+    from {
+      opacity: 0;
+      translate: 0 100px;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+      scale: 1;
+    }
+  }
+  @media (width < 970px) {
+    .card-area #parrafo {
+      padding: 0 8rem;
+      ;
+    }
+  }
+  @media (width < 898px) {
+    .card-area #parrafo {
+      padding: 0 3.5rem;
+    }
+  }
+  @media (width < 830px) {
+    .card-area{
+      & .wrapper{
+        & h2{
+          margin-top: 2rem;
+        }
+      }
+    }
+    .card-area #parrafo {
+      padding: 0 1rem;
+      font-family: var(--second-font);
+    }
+  }
+</style>

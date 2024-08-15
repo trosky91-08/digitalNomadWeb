@@ -1,0 +1,50 @@
+---
+import Banner from "../components/banner.astro";
+import About from "../components/about.astro";
+import Cards from "../components/cards.astro";
+import Teams from "../components/teams.astro";
+import BlogFooter from "../components/blogFooter.astro";
+import Founders from "../components/founders.astro";
+import Ambassadors from "../components/Ambassadors.astro";
+import HeaderReact from "../components/header";
+import Layout from "../components/layout.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../../Diseño sin título (1).png"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>DNAcol</title>
+  </head>
+  <Layout>
+    
+    <HeaderReact
+      title1={"About"}
+      id1={"#about"}
+      title2={"Our values"}
+      id2={"#value"}
+      title3={"Founders"}
+      id3={"#founders"}
+      title4={"Team"}
+      id4={"#teams"}
+      title5={"Ambassadors"}
+      id5={"#Ambassadors"}
+      client:only="react"
+    />
+    <Banner />
+    <About />
+    <Cards />
+    <Founders />
+    <Teams />
+    <Ambassadors />
+    <BlogFooter />
+  </Layout>
+</html>
