@@ -1,0 +1,193 @@
+---
+
+---
+
+<header>
+  <div class="logo">
+    <a href="#">
+      <img src="/logoDnacol.png" alt="" />
+    </a>
+  </div>
+  <input type="checkbox" id="check" />
+  <div class="icon">
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
+    <i class="fa-solid fa-xmark" id="menu-close"></i>
+  </div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#value">Our values</a>
+    <a href="#founders">Founders</a>
+    <a href="#teams">Team</a>
+    <a href="#Ambassadors">Our Ambassadors</a>
+  </nav>
+  <a class="btn" href="/form">Subscribe</a>
+</header>
+
+<style>
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    box-sizing: border-box;
+    & nav {
+      display: flex;
+      align-items: center;
+      & a {
+        text-decoration: none;
+        color: aliceblue;
+        font-size: var(--font-size-p);
+        margin-left: 2rem;
+        font-family: var(--first-font);
+        font-weight: bold;
+      }
+      & a:hover {
+        color: #abebc6;
+      }
+    }
+    & .btn {
+      padding: 0.7rem;
+      background: white;
+      border-radius: 1rem;
+      text-decoration: none;
+      margin-right: 1rem;
+      font-family: var(--first-font);
+      color: black;
+    }
+    & .btn:hover {
+      background: #abebc6;
+      color: var(--first-color);
+    }
+    & .icon {
+      display: none;
+    }
+    & .logo {
+      max-width: 70px;
+      height: auto;
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    & #check {
+      padding: 1rem;
+      display: none;
+    }
+  }
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(13, 66, 36, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: -1;
+  }
+  @media (width < 950px) {
+    header {
+      padding: 0 2rem;
+      & nav {
+        display: none;
+        padding-top: 2rem;
+        display: none;
+        position: absolute;
+        top: 99%;
+        left: 0;
+        width: 100%;
+        height: 17rem;
+        background: rgba(13, 66, 36, 0.8);
+        backdrop-filter: blur(10px);
+        & a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 1.5rem;
+        }
+      }
+      & #check {
+          display: block;
+          opacity: 0;
+          z-index: 100;
+        }
+        & .icon {
+        position: absolute;
+        margin-right: 1rem;
+        right: 0;
+      }
+      & .btn {
+        display: none;
+      }
+      & .icon {
+        display: block;
+        color: var(--third-color);
+        padding: 1rem;
+        font-size: 2rem;
+        cursor: pointer;
+      
+      }
+    }
+    #check:checked ~ nav {
+        display: block;
+      }
+    #check:checked ~ .icon #menu-icon {
+      display: none;
+    }
+    #menu-close {
+      display: none;
+    }
+    #check:checked ~ .icon #menu-close {
+      display: block;
+    }
+  }
+  @media (width < 768px) {
+    header {
+      & nav {
+        padding-top: 2rem;
+        display: none;
+        position: absolute;
+        top: 99%;
+        left: 0;
+        width: 100%;
+        height: 17rem;
+        background: rgba(13, 66, 36, 0.8);
+        backdrop-filter: blur(10px);
+        & a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 1.5rem;
+        }
+        
+      }
+      & #check {
+          display: block;
+          opacity: 0;
+          z-index: 100;
+        }
+      
+      & .icon {
+        position: absolute;
+        margin-right: 1rem;
+        right: 0;
+      }
+    }
+    #check:checked ~ nav {
+        display: block;
+      }
+    #check:checked ~ .icon #menu-icon {
+      display: none;
+    }
+    #menu-close {
+      display: none;
+    }
+    #check:checked ~ .icon #menu-close {
+      display: block;
+    }
+  }
+</style>

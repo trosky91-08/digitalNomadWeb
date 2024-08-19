@@ -11,14 +11,11 @@ const { name } = Astro.props;
     <title>{name}</title>
   </head>
   <body id="member">
-   
     <slot />
-    
-   
+
     <script
       src="https://kit.fontawesome.com/b992314f76.js"
       crossorigin="anonymous"></script>
-
   </body>
 </html>
 
@@ -38,16 +35,13 @@ const { name } = Astro.props;
     --font-size-p: 1.5rem;
     --font-size-h-card: 25px;
     --font-color-global: rgba(67, 68, 68, 1);
+    scroll-behavior: smooth;
   }
   * {
     margin: 0;
     padding: 0;
-    height: 100%;
     box-sizing: border-box;
     font-family: var(--first-font);
     color: var(--font-color-global);
-    
   }
-
- 
 </style>

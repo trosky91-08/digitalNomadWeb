@@ -9,15 +9,13 @@
       experiences for all members in Colombia.
     </p>
     <div class="box-area">
-      <div class="box">
+      <div class="box joan-box">
         <img src="../4 Joan Boluda Chova-4 (1).jpg" alt="" />
         <div class="box-contend">
           <h3>Joan</h3>
           <h4>Director of International Affairs</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-            itaque, consectetur voluptas amet similique eos aspernatur
-            blanditiis officiis voluptate recusandae?
+            Joan, a Spanish entrepreneur, researched digital nomadism in Colombia. As Director of International Affairs and head of Nomadas Digitales Latinos, he connects global nomads, driven by a passion for bringing people together.
           </p>
           <div class="social-container">
             <a href="https://www.facebook.com/francois.mongeau"
@@ -29,17 +27,11 @@
             <a href="https://www.instagram.com/francois.mongeau/"
               ><i class="fa-brands fa-instagram"></i></a
             >
-            <a href="Francois.mongeau@dnacol.com"
-              ><i class="fa-solid fa-envelope"></i></a
-            >
           </div>
         </div>
       </div>
       <div class="box">
-        <img
-          src="../laura.webp"
-          alt="laura"
-        />
+        <img src="../laura.webp" alt="laura" />
         <div class="box-contend">
           <h3>Laura Morales</h3>
           <h4>Director of Marketing and Communications</h4>
@@ -138,14 +130,12 @@
         </div>
       </div>
       <div class="box">
-        <img src="../../DanielaMexico (1).jpeg" alt="" />
+        <img src="/DairoMontiel.png" alt="" />
         <div class="box-contend">
-          <h3>Daniela Curiel</h3>
-          <h4>Communications Asssistant</h4>
+          <h3>Dairo Montiel</h3>
+          <h4>Web Developer</h4>
           <p class="text-daniela">
-            Daniela is an International Relations student from Mexico. She is
-            interested in topics like sustainable development, languages, nature
-            and art.
+            Dairo is technology enthusiast with a passion for discovering new cultures and meeting people from all walks of life. With a free spirit, I like embrace the diversity of the world and the endless possibilities that technology offers.
           </p>
           <div class="social-container">
             <a
@@ -172,7 +162,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      & h2{
+      & h2 {
         font-family: var(--first-font);
         font-size: var(--size-h2);
         letter-spacing: var(--letter-space);
@@ -180,9 +170,9 @@
         margin-top: 3rem;
       }
     }
-   
+
     .wrapper #parrafo {
-      padding: 0 10rem;
+      padding: 0 7rem;
       font-family: var(--second-font);
       text-align: justify;
       font-size: var(--font-size-p);
@@ -207,6 +197,14 @@
         overflow: hidden;
         position: relative;
         border-radius: 1rem;
+        & .box-contend{
+          & h4{
+            margin: 0;
+          }
+          & p{
+            text-align: justify;
+          }
+        }
         & img {
           width: 100%;
           display: block;
@@ -225,33 +223,30 @@
         color: var(--third-color);
         margin-bottom: 0;
       }
-      & h4{
+      & h4 {
         font-family: var(--first-font);
         font-size: 1.2rem;
         color: var(--third-color);
         margin-top: 1rem;
       }
-      & p{
+      & p {
         font-family: var(--second-font);
         color: var(--third-color);
-        margin-top: 1rem;
       }
     }
-    
-    
+
     .text-daniela {
       font-size: 0.9rem;
     }
     .social-container {
       margin-top: 1rem;
-      & a{
-        & i{
+      & a {
+        & i {
           font-size: 1.3rem;
           padding-left: 1rem;
           color: var(--third-color);
         }
       }
-      
     }
     .social-container a i:hover {
       color: var(--first-color);
@@ -275,6 +270,8 @@
       box-sizing: border-box;
       transition: height 0.5s;
     }
+    
+   
     .box:hover .box-contend {
       height: 100%;
     }
@@ -293,7 +290,7 @@
     @media (width < 970px) {
       .card-area {
         & h2 {
-          margin-top: 2rem;
+          margin-top: 3rem;
         }
         & #parrafo {
           padding: 0 8rem;
@@ -302,9 +299,7 @@
     }
     @media (width < 898px) {
       .card-area {
-        & h2 {
-          margin-top: 2rem;
-        }
+        
         & #parrafo {
           padding: 0 3.5rem;
         }
@@ -325,6 +320,25 @@
 
       .box-area {
         animation-range: entry 10% cover 25%;
+      }
+    }
+    @media (width < 435px) {
+      .card-area {
+        & .wrapper {
+          & h2 {
+            padding-top: 1rem;
+          }
+          & .box-area{
+            & .box{
+              & .box-contend{
+                & p{
+                  font-size: 12px;
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+        }
       }
     }
   </style>

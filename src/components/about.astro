@@ -24,9 +24,8 @@
       color: var(--first-color);
       margin-top: 3rem;
     }
-  
   }
-  
+
   .container p {
     padding: 0 10rem;
     font-family: var(--second-font);
@@ -35,35 +34,39 @@
     color: var(--font-color-global);
   }
   @media (width < 970px) {
-    .container  {
-      & h2{
-        margin-top: 2rem;
-      }
-      & p{
+    .container {
+      /* & h2 {
+        margin-top: 3rem;
+      } */
+      & p {
         padding: 0 8rem;
       }
     }
   }
   @media (width < 898px) {
-    .container  {
-      & h2{
-        margin-top: 2rem;
-      }
-      & p{
+    .container {
+      
+      & p {
         padding: 0 6rem;
       }
     }
   }
   @media (width < 830px) {
-    .container  {
-      & h2{
+    .container {
+      & h2 {
         margin-top: 2rem;
       }
-      & p{
+      & p {
         padding: 0 4rem;
         font-family: var(--second-font);
       }
-      
+    }
+  }
+  @media (width < 435px) {
+    .container {
+      & h2 {
+        padding-top: 1rem;
+      }
     }
   }
 </style>
