@@ -1,0 +1,105 @@
+.infinite-slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    justify-content: flex-start;
+    margin-top: 50px;
+    overflow: hidden;
+    margin: 100px auto;
+    box-sizing: border-box;
+  }
+  
+  .infinite-slider-wrapper:hover .infinite-slider.left {
+    animation-play-state: paused;
+  }
+  
+  .infinite-slider-wrapper:hover .infinite-slider.right {
+    animation-play-state: paused;
+  }
+  
+  .infinite-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: initial;
+    gap: 0;
+    width: fit-content;
+  }
+  
+  .infinite-slider img {
+    filter: grayscale(1);
+    height: 100px;
+    margin: auto 50px;
+    object-fit: cover;
+    transition: 0.5s ease-in-out filter;
+    width: fit-content;
+  }
+  
+  .infinite-slider img:hover {
+    filter: grayscale(0);
+  }
+  
+  .infinite-slider.left {
+    animation: slidingLeft 20s linear infinite;
+    animation-delay: -20s;
+    animation-play-state: running;
+  }
+  
+  .infinite-slider.left:nth-child(2) {
+    animation: slidingLeft-2 20s linear infinite;
+    animation-delay: -10s;
+    animation-play-state: running;
+  }
+  
+  .infinite-slider.right {
+    animation: slidingRight 20s linear infinite;
+    animation-delay: -20s;
+    animation-play-state: running;
+  }
+  
+  .infinite-slider.right:nth-child(2) {
+    animation: slidingRight-2 20s linear infinite;
+    animation-delay: -10s;
+    animation-play-state: running;
+  }
+  
+  @keyframes slidingLeft {
+    0% {
+      transform: translateX(100%);
+    }
+  
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes slidingLeft-2 {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+  
+  @keyframes slidingRight {
+    0% {
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  @keyframes slidingRight-2 {
+    0% {
+      transform: translateX(-200%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }

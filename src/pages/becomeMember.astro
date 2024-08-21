@@ -1,0 +1,379 @@
+---
+import Layout from "../layouts/Layout.astro";
+import BlogFooter from "../components/blogFooter.astro";
+import Slider from "../components/slider";
+---
+
+<Layout name="Member">
+    
+    <div class="banner">
+      <div class="text">
+        <h1>Become a member</h1>
+        <p>
+          The DNACol membership offers a range of benefits for digital nomads (DN)
+          and expatriates in Colombia, focusing on sustainable tourism,
+          environmental awareness, and local business connections. Join DNACol to
+          explore Colombia’s natural and cultural wonders responsibly while
+          building valuable relationships with local entrepreneurs. Enhance your
+          community integration and contribute to sustainable economic
+          development.
+        </p>
+      </div>
+    </div>
+  
+    <div class="container-cards">
+      <div class="card card1">
+        <div class="text-card">
+          <h2>Special discounts from our partners</h2>
+          <p>
+            Enjoy exclusive discounts from our partners, including tour guides,
+            coliving spaces, dance academies, and law firms. Take advantage of
+            these offers to enhance your digital nomad experience affordably and
+            conveniently.
+          </p>
+        </div>
+        <div class="img-container">
+          <img src="../imagen-web-site.jpeg" alt="" />
+        </div>
+      </div>
+      <div class="card card2">
+        <div class="img-container">
+          <img src="../imagen-web-site.jpeg" alt="" />
+        </div>
+        <div class="text-card">
+          <h2>Exclusive online and in-person events</h2>
+          <p>
+            Join our exclusive online and in-person events featuring expert talks,
+            networking opportunities, and cultural activities. Enhance your
+            skills, connect with like-minded individuals, and enjoy unique
+            experiences tailored for digital nomads.
+          </p>
+        </div>
+      </div>
+      <div class="card card3">
+        <div class="text-card">
+          <h2>Access to our community</h2>
+          <p>
+            Gain access to our vibrant community of digital nomads. Share
+            experiences, collaborate on projects, and build lasting connections.
+            Enjoy support, inspiration, and resources tailored to your unique
+            lifestyle
+          </p>
+        </div>
+        <div class="img-container">
+          <img src="../imagen-web-site.jpeg" alt="" />
+        </div>
+      </div>
+    </div>
+  
+    <section id="title" class="membership">
+      <h1>Membership</h1>
+      <div class="container-membership">
+        <section class="first-membership">
+          <h2>6 months <br />membership</h2>
+          <h3>$ 60 USD</h3>
+          <a
+            target="_blank"
+            href="https://www.paypal.com/webapps/hermes?token=6MN34532B6379960E&useraction=commit&wpsFlowRedirectToXorouterSkipHermesStartTime=1718899736910&flowType=WPS&mfid=1718899736523_f555096e91677"
+            ><i class="fa-brands fa-paypal"></i> Suscribe now</a
+          >
+        </section>
+        <section>
+          <h2>12 months <br />membership</h2>
+          <h3>$ 100 USD</h3>
+          <a
+            target="_blank"
+            href="https://www.paypal.com/webapps/hermes?token=9S676921M70227717&useraction=commit&wpsFlowRedirectToXorouterSkipHermesStartTime=1718899741603&flowType=WPS&mfid=1718899741228_f131240ef1d62"
+            ><i class="fa-brands fa-paypal"></i> Suscribe now</a
+          >
+        </section>
+      </div>
+    </section>
+    <section id="partners" class="partners">
+      <h1>Partners</h1>
+      <Slider client:only="react" />
+    </section>
+    <BlogFooter />
+  </Layout>
+  
+  <style>
+    .banner {
+      width: 100%;
+      height: 100vh;
+      background-image: url(../fotoDnacol2.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      
+      & .text {
+        position: relative;
+        right: -45%;
+        bottom: -45%;
+        width: 50%;
+        backdrop-filter: blur(10px);
+        padding: 1rem;
+        margin-right: 1rem;
+        border-radius: 1rem;
+        background: rgba(0, 104, 56,  0.5);
+        & h1 {
+          color: var(--third-color);
+          text-align: center;
+          font-size: 45px;
+        }
+        & p {
+          color: var(--third-color);
+          padding: 1rem;
+          line-height: 1.5rem;
+          text-align: justify;
+          font-size: 18px;
+        }
+      }
+    }
+  
+    .container-cards {
+      & .card {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 1rem;
+        width: 90%;
+        margin: 4rem auto;
+  
+        & .img-container {
+          width: 100%;
+          max-width: 400px;
+          margin: auto;
+          overflow: hidden;
+          border-radius: 1rem;
+  
+          & img {
+            width: 100%;
+            height: auto;
+            display: block;
+          }
+        }
+        & .text-card {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-left: 1rem;
+          & h2 {
+            margin-bottom: 1.5rem;
+            font-size: 32px;
+            text-align: center;
+          }
+          & p {
+            text-align: justify;
+            margin: 0 2rem;
+            line-height: 1.5rem;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  
+    .membership {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 0;
+      & h1 {
+        font-family: var(--first-font);
+        color: var(--first-color);
+        font-size: var(--size-h2);
+        margin-bottom: 2rem;
+      }
+      & .container-membership {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & section {
+          text-align: center;
+          margin: 0 2rem;
+          border: dotted 3px;
+          padding: 0rem 2rem 2rem 2rem;
+  
+          & h2,
+          h3 {
+            font-size: var(--size-h2);
+            padding: 2rem 0;
+          }
+          & a {
+            text-decoration: none;
+            font-size: var(--font-size-p);
+            padding: 1rem;
+            background: var(--first-color);
+            color: #fff;
+            border-radius: 10px;
+            & i {
+              font-size: var(--font-size-p);
+            }
+          }
+        }
+      }
+    }
+    .partners {
+      text-align: center;
+      & h1 {
+        font-family: var(--first-font);
+        color: var(--first-color);
+        font-size: var(--size-h2);
+        padding-top: 2rem;
+      }
+    }
+    @media (width<1100px) {
+      .banner{
+        height: 90vh;
+        & .text{
+          position: absolute;
+          width: 100%;
+          left: 0;
+          bottom: -1.5%;     
+          & h1{
+            font-size: 32px!important;
+          }
+          & p{
+  
+          }     
+        }
+      
+      }
+      .partners{
+        & h1{
+          font-size: 32px;
+        }
+      }
+    
+  
+      .membership {
+        & .container-membership {
+          display: flex;
+          flex-direction: column;
+          & section {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    @media(width<950px){
+      .banner{
+        height: 90vh;
+        & .text{
+          position: absolute;
+          width: 100%;
+          left: 0;
+          bottom: -1.5%;       
+          & h1{
+            font-size: 32px;
+          }
+            
+        }
+      }
+    }
+    @media (width<870px) {
+      .banner {
+        height: 90vh;
+        & .text{
+          position: absolute;
+          width: 100%;
+          left: 0;
+          bottom: -1.5%;     
+          & h1{
+            font-size: 32px;
+          }
+              
+        }
+      }
+    }
+    @media (width<655px) {
+      .banner {
+        height: 88vh;
+  
+      }
+  
+      .container-section {
+        padding-top: 4rem;
+        margin-top: 5rem;
+        & section {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 0 50px;
+  
+          & img {
+            width: 100%;
+            margin: 0;
+            padding: 2rem 0;
+            border-radius: 1rem;
+          }
+          & .container1 {
+            padding: 2rem 0;
+  
+            & h2 {
+              margin-bottom: 0;
+              text-align: center;
+              font-size: 25px;
+              margin-bottom: 2rem;
+            }
+            & p {
+              text-align: justify;
+            }
+          }
+        }
+        & .difent-section {
+          padding: 4rem 50px;
+        }
+        & #card3 {
+          padding-top: 4rem;
+        }
+      }
+  
+      .membership {
+        padding-top: 4rem;
+        & h1 {
+          font-size: 35px;
+        }
+        & .container-membership {
+          & section {
+            & h2 {
+              font-size: 35px;
+            }
+            & h3 {
+              font-size: 35px;
+            }
+          }
+        }
+      }
+    }
+    @media (width<400px) {
+      .container-section {
+        & section {
+          padding: 0 50px;
+          & .container1 {
+            & h2 {
+              font-size: 30px;
+            }
+          }
+        }
+        .difent-section {
+          & section {
+            padding: 0 50px;
+          }
+        }
+      }
+    }
+    @media (width<375px){
+      .container-cards{
+        & .card{
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 1rem;
+          width: 90%;
+          margin: 4rem auto;
+        }
+      }
+    }
+  </style>
+  

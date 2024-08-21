@@ -1,0 +1,514 @@
+---
+import Layout from "../layouts/Layout.astro";
+import BlogFooter from "../components/blogFooter.astro";
+import NavBarDancer from "../components/navBarDancer.astro";
+---
+
+<Layout>
+  <NavBarDancer />
+  <div class="banner">
+    <div class="text">
+      <h1>NomaDancers <br /> <small>Latin Beats Workation In Cali</small></h1>
+      <p>January 18th - February 1st <br /> Cali, Colombia</p>
+    </div>
+    <video autoplay muted loop>
+      <source src="../video1.mp4" />
+    </video>
+    <div class="overlay"></div>
+  </div>
+  <div class="main-text" id="nomadancer">
+    <h1>What is NomaDancers?</h1>
+    <p>
+      NomaDancers is a two-week Latin Dance Workation led by the Digital Nomads
+      Association of Colombia, designed for digital nomads, taking place in
+      Colombia. It combines daily Latin dance classes with cultural immersion,
+      networking, and community building.
+    </p>
+  </div>
+  <div class="whatWeDo" id="activities">
+    <h1 class="title">What We Do?</h1>
+    <div class="card-container">
+      <div class="card">
+        <div class="card-img">
+          <img src="../learnDance.jpg" alt="people-dance" />
+        </div>
+        <div class="text-card">
+          <h1>Learn and Dance</h1>
+          <p>
+            Travel, discover, and dance in one of the best Latin dance locations
+            in the world. Enjoy daily group dance classes of salsa caleña and
+            bachata with experimented teachers
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="../foster deep.jpg" alt="people-dance" />
+        </div>
+        <div class="text-card">
+          <h1>Activities to foster deep connections</h1>
+          <p>
+            Build lasting relationships with a community of like-minded digital
+            nomads from around the globe. Share experiences in a supportive and
+            inspiring community to strengthen connections.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="../networking.jpg" alt="networking" />
+        </div>
+        <div class="text-card">
+          <h1>Networking</h1>
+          <p>
+            Grow your business through activities designed to help participants
+            share ideas and build professional relationships.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="../connectLocals.jpg" alt="connect with loacl" />
+        </div>
+        <div class="text-card">
+          <h1>Connect with Locals</h1>
+          <p>
+            Participate in events, dance with locals, and explore the rich
+            traditions and beauty of Colombia. Our partnerships with local
+            businesses ensure a genuine and impactful cultural exchange.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="../trip.jpg" alt="trip" />
+        </div>
+        <div class="text-card">
+          <h1>Day Trips and Activities</h1>
+          <p>
+            Explore the beauty of Colombia with organized day trips and
+            activities.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="../localDeals.jpg" alt="dale" />
+        </div>
+        <div class="text-card">
+          <h1>Local Deals</h1>
+          <p>
+            Benefit from exclusive deals and discounts at local businesses. Make
+            a positive impact by supporting local communities.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="../coworking.jpg" alt="coworking" />
+        </div>
+        <div class="text-card">
+          <h1>Coworking</h1>
+          <p>
+            Maintain your professional productivity with dedicated coworking
+            spaces while enjoying your workation.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="../workout.jpg" alt="workout" />
+        </div>
+        <div class="text-card">
+          <h1>Workout</h1>
+          <p>
+            Stay fit and centered with workout sessions to complement your dance
+            training.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="title" class="membership">
+    <h1>Workation</h1>
+    <div class="container-membership">
+      <section class="first-membership">
+        <h2>BOOKING FEE</h2>
+        <a target="_blank" href="https://nomad-1.typeform.com/NomaDancers"
+          ><i class="fa-brands fa-paypal"></i> Book now</a
+        >
+      </section>
+    </div>
+  </section>
+  <div class="condition" id="condition">
+    <div class="filter">
+      <div class="include">
+        <h1>Include</h1>
+        <div class="container ">
+          <span>
+            <i class="fa-solid fa-music"></i> Two Weeks of Daily Latin -Dance Lessons
+          </span>
+          <span>
+            <i class="fa-solid fa-music"></i>
+            Vibrant Social Dance Nights with Locals
+          </span>
+          <span>
+            <i class="fa-solid fa-music"></i>
+            Welcome Drink
+          </span>
+          <span>
+            <i class="fa-solid fa-music"></i>
+            Exclusive Local Deals
+          </span>
+          <span>
+            <i class="fa-solid fa-music"></i>
+            Authentic Colombian Cultural Experiences
+          </span>
+          <span>
+            <i class="fa-solid fa-music"></i>
+            Connection-Building Activities
+          </span>
+          <span>
+            <i class="fa-solid fa-music"></i>
+            Idea Sharing and Professional Growth Sessions
+          </span>
+        </div>
+      </div>
+      <div class="no-include">
+        <h1>No Include</h1>
+        <div class="container">
+          <span>
+            <i class="fa-solid fa-music"></i> Travel Costs
+          </span>
+          <span>
+            <i class="fa-solid fa-music"></i> Accommodation
+          </span>
+          <span>
+            <i class="fa-solid fa-music"></i> Day Trips
+          </span>
+          <span>
+            <i class="fa-solid fa-music"></i> Any Unlisted Expenses
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="faq" id="faq's">
+    <h1>Faq's</h1>
+    <div class="main-faq">
+      <details>
+        <summary>
+          What dance activities are included in the NomaDancers workation?
+        </summary>
+        <p>
+          Our workation includes daily salsa and bachata classes and optional
+          dance events and social outings. Whether you’re a beginner or an
+          experienced dancer, there’s something for everyone. You’ll have plenty
+          of opportunities to practice, learn, and immerse yourself in the local
+          dance scene.
+        </p>
+      </details>
+      <details>
+        <summary>
+          Do I need any prior dance experience to join the NomaDancers
+          workation?
+        </summary>
+        <p>
+          No prior dance experience is necessary to join the Nomadancer
+          workation. Whether you’re a complete beginner or an experienced
+          dancer, our program is designed to accommodate all skill levels.The
+          focus is on enjoying the dance and cultural experience, so everyone is
+          welcome to join!
+        </p>
+      </details>
+      <details>
+        <summary>
+          How do I handle my work commitments while participating in the
+          NomaDancers workation?
+        </summary>
+        <p>
+          Our schedule is designed to accommodate your work hours, and you’re
+          free to choose which dance classes and activities you want to
+          participate in. Whether you want to fully engage in all activities or
+          focus more on work, you’ll have the autonomy to create a routine that
+          suits your needs. With dedicated workspaces, you can maintain
+          productivity while enjoying as much or as little of the dance and
+          cultural experiences as you prefer.
+        </p>
+      </details>
+    </div>
+  </div>
+  <BlogFooter />
+</Layout>
+
+<style>
+  .banner {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    & video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+    & .text {
+      z-index: 2;
+      text-align: center;
+      color: var(--third-color);
+      & h1 {
+        font-size: 80px;
+        & small {
+          font-size: 35px;
+        }
+      }
+      & p {
+        font-size: 35px;
+      }
+    }
+    & .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      background: rgba(0, 104, 56, 0.4);
+    }
+  }
+  .main-text {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 10rem 0;
+    & h1 {
+      font-size: 58px;
+      text-align: center;
+    }
+    & p {
+      padding: 0 10rem;
+      text-align: justify;
+      font-size: 35px;
+      line-height: 2.5rem;
+    }
+  }
+  .whatWeDo {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 104, 56, 0.25);
+    padding: 5rem 0;
+    & .title {
+      font-size: 58px;
+    }
+    & .card-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      & .card {
+        width: 300px;
+        height: auto;
+        padding: 1rem;
+        & .card-img {
+          width: 100%;
+          height: 200px;
+          overflow: hidden;
+          border-radius: 1rem;
+        }
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: 50% 20%;
+        }
+        & .text-card {
+          & h1 {
+            text-align: center;
+          }
+          & p {
+            text-align: justify;
+            line-height: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+  .membership {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+    & h1 {
+      font-family: var(--first-font);
+      color: var(--first-color);
+      font-size: 58px;
+      margin-bottom: 2rem;
+    }
+    & .container-membership {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & section {
+        text-align: center;
+        margin: 0 2rem;
+        border: dotted 3px;
+        padding: 0rem 2rem 2rem 2rem;
+
+        & h2,
+        h3 {
+          font-size: var(--size-h2);
+          padding: 1rem 0;
+        }
+        & a {
+          text-decoration: none;
+          font-size: var(--font-size-p);
+          padding: 1rem;
+          background: var(--first-color);
+          color: #fff;
+          border-radius: 10px;
+          & i {
+            font-size: var(--font-size-p);
+          }
+        }
+      }
+    }
+  }
+
+  .faq {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 10rem 0;
+    & h1 {
+      font-size: 58px;
+      text-align: center;
+    }
+    & p {
+      padding: 0 10rem;
+      text-align: justify;
+      font-size: 35px;
+      line-height: 2.5rem;
+    }
+  }
+
+  @media (width < 435px) {
+    .banner {
+      & .text {
+        & h1 {
+          font-size: 48px;
+        }
+      }
+    }
+    .main-text {
+      & h1 {
+        font-size: 48px;
+        padding: 3rem 0;
+      }
+      & p {
+        padding: 0 4rem;
+        text-align: justify;
+      }
+    }
+    .whatWeDo {
+      & .title {
+        font-size: 48px;
+      }
+    }
+    .membership {
+      & h1 {
+        font-size: 48px;
+      }
+    }
+    .condition {
+      background-image: url(../learnDance.jpg);
+      background-size: cover;
+      background-position: left;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100vh;
+
+      & .filter {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 104, 56, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+      
+      & .include {
+        & h1 {
+          color: var(--third-color);
+        }
+        & .container {
+          display: flex;
+          justify-content: center;
+          align-items: left;
+          flex-direction: column;
+          width: 327px;
+          & span {
+            margin-top: 0.5rem;
+            color: var(--third-color);
+            & i{
+
+            }
+          }
+        }
+      }
+      & .no-include{
+        margin-top: 3rem;
+        & h1{
+          color: var(--third-color);
+        }
+        & .container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          width: 327px;
+          & span{
+            margin-top: 0.5rem;
+            width: 327px;
+            color: var(--third-color);
+          }
+
+        }
+      }
+    }
+    
+    }
+    .faq {
+      box-sizing: border-box;
+      & h1 {
+        font-size: 48px;
+        padding: 3rem 0;
+      }
+      .main-faq {
+        /* padding: 1rem; */
+        text-align: left;
+        & details {
+          padding: 0 3rem;
+          margin-top: 2rem;
+          font-size: 32px;
+          & p {
+            padding: 0 1rem;
+            font-size: 25px;
+            line-height: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+</style>
