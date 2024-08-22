@@ -9,13 +9,14 @@ import NavBarDancer from "../components/navBarDancer.astro";
   <div class="banner">
     <div class="text">
       <h1>NomaDancers <br /> <small>Latin Beats Workation In Cali</small></h1>
-      <p>January 18th - February 1st <br /> Cali, Colombia</p>
+      <p>January 18th - February 1st <br />2025<br /> <br />Cali, Colombia</p>
     </div>
     <video autoplay muted loop>
       <source src="../video1.mp4" />
     </video>
     <div class="overlay"></div>
   </div>
+
   <div class="main-text" id="nomadancer">
     <h1>What is NomaDancers?</h1>
     <p>
@@ -133,9 +134,9 @@ import NavBarDancer from "../components/navBarDancer.astro";
     <h1>Workation</h1>
     <div class="container-membership">
       <section class="first-membership">
-        <h2>BOOKING FEE</h2>
+        <h2>Join the Waitlist</h2>
         <a target="_blank" href="https://nomad-1.typeform.com/NomaDancers"
-          ><i class="fa-brands fa-paypal"></i> Book now</a
+          ><i class="fa-brands fa-paypal"></i> Join the Waitlist</a
         >
       </section>
     </div>
@@ -143,8 +144,8 @@ import NavBarDancer from "../components/navBarDancer.astro";
   <div class="condition" id="condition">
     <div class="filter">
       <div class="include">
-        <h1>Include</h1>
-        <div class="container ">
+        <h1>Included</h1>
+        <div class="container">
           <span>
             <i class="fa-solid fa-music"></i> Two Weeks of Daily Latin -Dance Lessons
           </span>
@@ -175,7 +176,7 @@ import NavBarDancer from "../components/navBarDancer.astro";
         </div>
       </div>
       <div class="no-include">
-        <h1>No Include</h1>
+        <h1>Not Included</h1>
         <div class="container">
           <span>
             <i class="fa-solid fa-music"></i> Travel Costs
@@ -194,7 +195,7 @@ import NavBarDancer from "../components/navBarDancer.astro";
     </div>
   </div>
   <div class="faq" id="faq's">
-    <h1>Faq's</h1>
+    <h1>Faq</h1>
     <div class="main-faq">
       <details>
         <summary>
@@ -240,7 +241,6 @@ import NavBarDancer from "../components/navBarDancer.astro";
   </div>
   <BlogFooter />
 </Layout>
-
 <style>
   .banner {
     position: relative;
@@ -291,6 +291,7 @@ import NavBarDancer from "../components/navBarDancer.astro";
     & h1 {
       font-size: 58px;
       text-align: center;
+      padding-top: 2rem;
     }
     & p {
       padding: 0 10rem;
@@ -383,22 +384,101 @@ import NavBarDancer from "../components/navBarDancer.astro";
       }
     }
   }
+  .condition {
+    background-image: url(../learnDance.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+
+    & .filter {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 104, 56, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 3rem;
+      & .include {
+        & h1 {
+          color: var(--third-color);
+          font-size: 58px;
+          margin-bottom: 0;
+          text-align: center;
+        }
+        & .container {
+          display: flex;
+          justify-content: center;
+          align-items: left;
+          flex-direction: column;
+          width: 100%;
+          margin-top: 1rem;
+          & span {
+            margin-top: 0.5rem;
+            color: var(--third-color);
+            font-size: 30px;
+          }
+        }
+      }
+      & .no-include {
+        height: 379px;
+        & h1 {
+          color: var(--third-color);
+          font-size: 58px;
+          margin-bottom: 0;
+          text-align: center;
+        }
+        & .container {
+          display: flex;
+          justify-content: center;
+          align-items: left;
+          flex-direction: column;
+          width: 614px;
+          margin-top: 1rem;
+          & span {
+            margin-top: 0.5rem;
+            color: var(--third-color);
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
 
   .faq {
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    margin: 10rem 0;
+    margin: 10rem 10rem;
     & h1 {
       font-size: 58px;
       text-align: center;
+      padding-top: 2rem;
+    }
+    & .main-faq {
+      & summary {
+        font-size: 35px;
+        margin-top: 3rem;
+      }
     }
     & p {
-      padding: 0 10rem;
       text-align: justify;
-      font-size: 35px;
+      font-size: 30px;
       line-height: 2.5rem;
+    }
+  }
+  @media (width < 1025px) {
+    .condition {
+      & .filter {
+        flex-direction: column;
+        & .include {
+          & h1 {
+          }
+        }
+      }
     }
   }
 
@@ -417,7 +497,9 @@ import NavBarDancer from "../components/navBarDancer.astro";
       }
       & p {
         padding: 0 4rem;
-        text-align: justify;
+        text-align: left;
+        line-height: 2.5rem;
+        font-size: 30px;
       }
     }
     .whatWeDo {
@@ -431,63 +513,57 @@ import NavBarDancer from "../components/navBarDancer.astro";
       }
     }
     .condition {
-      background-image: url(../learnDance.jpg);
-      background-size: cover;
-      background-position: left;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 100vh;
+     
 
       & .filter {
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 104, 56, 0.4);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        gap: 0;
         flex-direction: column;
 
-      
-      & .include {
-        & h1 {
-          color: var(--third-color);
-        }
-        & .container {
-          display: flex;
-          justify-content: center;
-          align-items: left;
-          flex-direction: column;
-          width: 327px;
-          & span {
-            margin-top: 0.5rem;
+        & .include {
+          & h1 {
             color: var(--third-color);
-            & i{
-
+            font-size: 48px;
+            padding-top: 3rem;
+          }
+          & .container {
+            display: flex;
+            justify-content: center;
+            align-items: left;
+            flex-direction: column;
+            width: 327px;
+            & span {
+              margin-top: 0.5rem;
+              color: var(--third-color);
+              font-size: 30px;
+              & i {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+        & .no-include {
+          & h1 {
+            color: var(--third-color);
+            font-size: 48px;
+          }
+          & .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 327px;
+            & span {
+              margin-top: 0.5rem;
+              width: 327px;
+              color: var(--third-color);
+              font-size: 30px;
+              & i {
+                font-size: 18px;
+              }
             }
           }
         }
       }
-      & .no-include{
-        margin-top: 3rem;
-        & h1{
-          color: var(--third-color);
-        }
-        & .container{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-          width: 327px;
-          & span{
-            margin-top: 0.5rem;
-            width: 327px;
-            color: var(--third-color);
-          }
-
-        }
-      }
-    }
-    
     }
     .faq {
       box-sizing: border-box;
@@ -495,17 +571,20 @@ import NavBarDancer from "../components/navBarDancer.astro";
         font-size: 48px;
         padding: 3rem 0;
       }
-      .main-faq {
-        /* padding: 1rem; */
+      & .main-faq {
         text-align: left;
+        width: 300px;
         & details {
-          padding: 0 3rem;
+          /* padding: 0 3rem; */
           margin-top: 2rem;
-          font-size: 32px;
+          /* font-size: 32px; */
           & p {
-            padding: 0 1rem;
+            /* padding: 0 1rem; */
             font-size: 25px;
             line-height: 1.5rem;
+          }
+          & summary {
+            font-size: 30px;
           }
         }
       }
