@@ -1,4 +1,3 @@
-
 <header>
   <div class="logo">
     <a href="#">
@@ -16,9 +15,11 @@
     <a href="#founders">Founders</a>
     <a href="#teams">Team</a>
     <a href="#Ambassadors">Our Ambassadors</a>
-    <a href="/nomadancer">NomaDancers</a>
+    <a id="Members" href="/becomeMember">Members</a>
+    <a id="NomaDancers" href="/nomadancer">NomaDancers</a>
+    <a href="https://nomad-1.typeform.com/to/uddeQGpz" id="btn-nav">Subscribe</a>
   </nav>
-  <a class="btn" href="/form">Subscribe</a>
+  <a class="btn" href="https://nomad-1.typeform.com/to/uddeQGpz">Subscribe</a>
 </header>
 
 <style>
@@ -38,13 +39,28 @@
       & a {
         text-decoration: none;
         color: aliceblue;
-        font-size: var(--font-size-p);
+        font-size: 22px;
         margin-left: 2rem;
         font-family: var(--first-font);
         font-weight: bold;
       }
       & a:hover {
         color: #abebc6;
+      }
+      & #btn-nav {
+        display: none;
+      }
+      & #Members{
+        color: #abebc6;
+      }
+      & #Members:hover{
+        color: aliceblue;
+      }
+      & #NomaDancers{
+        color: #abebc6;
+      }
+      & #NomaDancers:hover{
+        color:aliceblue
       }
     }
     & .btn {
@@ -87,7 +103,7 @@
     backdrop-filter: blur(10px);
     z-index: -1;
   }
-  @media (width < 950px) {
+  @media (width < 1090px) {
     header {
       padding: 0 2rem;
       & nav {
@@ -107,13 +123,22 @@
           align-items: center;
           margin-top: 1.5rem;
         }
+        & a:hover{
+          color: #abebc6;
+        }
+        & #btn-nav {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 1.5rem;
+        }
       }
       & #check {
-          display: block;
-          opacity: 0;
-          z-index: 100;
-        }
-        & .icon {
+        display: block;
+        opacity: 0;
+        z-index: 100;
+      }
+      & .icon {
         position: absolute;
         margin-right: 1rem;
         right: 0;
@@ -127,12 +152,11 @@
         padding: 1rem;
         font-size: 2rem;
         cursor: pointer;
-      
       }
     }
     #check:checked ~ nav {
-        display: block;
-      }
+      display: block;
+    }
     #check:checked ~ .icon #menu-icon {
       display: none;
     }
@@ -161,14 +185,13 @@
           align-items: center;
           margin-top: 1.5rem;
         }
-        
       }
       & #check {
-          display: block;
-          opacity: 0;
-          z-index: 100;
-        }
-      
+        display: block;
+        opacity: 0;
+        z-index: 100;
+      }
+
       & .icon {
         position: absolute;
         margin-right: 1rem;
@@ -176,8 +199,8 @@
       }
     }
     #check:checked ~ nav {
-        display: block;
-      }
+      display: block;
+    }
     #check:checked ~ .icon #menu-icon {
       display: none;
     }
